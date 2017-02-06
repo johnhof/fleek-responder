@@ -1,0 +1,33 @@
+{
+  "name": "fleek-responder",
+  "version": "1.0.0",
+  "description": "Response middleware for swagger documentation Edit",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleekjs/fleek-responder.git"
+  },
+  "keywords": [
+    "fleek",
+    "swagger",
+    "response",
+    "responder",
+    "koa"
+  ],
+  "author": "John Hofrichter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fleekjs/fleek-responder/issues"
+  },
+  "homepage": "https://github.com/fleekjs/fleek-responder#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
