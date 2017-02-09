@@ -22,7 +22,7 @@ For a swagger example, refer to the test [swagger json](https://github.com/fleek
 
 ```javascript
 const Koa = require('koa');
-const fleekCtx = require('fleek-context');
+const fleekCtx = require('fleek-context');Â
 const fleekResponder = require('fleek-responder');
 
 const SWAGGER = require('./swagger.json');
@@ -33,7 +33,12 @@ app.use(fleekCtx(SWAGGER));
 
 app.use(fleekResponder({
   strict: true, // Force all responses to validate against the path definitions
-  camelCase: true // convert shortcuts to camelcase
+  camelCase: true, // Convert shortcuts to camelcase
+  default: {
+    fallback: 'NotFound'
+    downstream: true, // Run default response application on the way down the middleware chain
+    upstream: true // Run default response application on the way up the middleware chain
+  }
 }));
 
 app.use((ctx, next) => {
