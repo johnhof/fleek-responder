@@ -1,7 +1,7 @@
 {
   "BadRequest": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -21,7 +21,7 @@
   },
   "Unauthorized": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -41,7 +41,7 @@
   },
   "PaymentRequired": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -61,7 +61,7 @@
   },
   "Forbidden": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -81,7 +81,7 @@
   },
   "NotFound": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -101,7 +101,7 @@
   },
   "MethodNotAllowed": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -121,7 +121,7 @@
   },
   "NotAcceptable": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -141,7 +141,7 @@
   },
   "ProxyAuthenticationRequired": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -161,7 +161,7 @@
   },
   "RequestTimeout": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -181,7 +181,7 @@
   },
   "Conflict": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -201,7 +201,7 @@
   },
   "Gone": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -221,7 +221,7 @@
   },
   "LengthRequired": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -241,7 +241,7 @@
   },
   "PreconditionFailed": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -261,7 +261,7 @@
   },
   "RequestEntityTooLarge": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -281,7 +281,7 @@
   },
   "RequestURITooLong": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -301,7 +301,7 @@
   },
   "UnsupportedMediaType": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -321,7 +321,7 @@
   },
   "RequestedRangeNotSatisfiable": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -341,7 +341,7 @@
   },
   "ExpectationFailed": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -361,7 +361,7 @@
   },
   "UnprocessableEntity": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -381,7 +381,7 @@
   },
   "Locked": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -401,7 +401,7 @@
   },
   "FailedDependency": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -421,7 +421,7 @@
   },
   "UnorderedCollection": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -441,7 +441,7 @@
   },
   "UpgradeRequired": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -461,7 +461,7 @@
   },
   "PreconditionRequired": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -481,7 +481,7 @@
   },
   "TooManyRequests": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -501,7 +501,7 @@
   },
   "Request Header Fields Too Large": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {

@@ -1,7 +1,7 @@
 {
   "InternalServerError": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -21,7 +21,7 @@
   },
   "NotImplemented": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -41,7 +41,7 @@
   },
   "BadGateway": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -61,7 +61,7 @@
   },
   "ServiceUnavailable": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -81,7 +81,7 @@
   },
   "GatewayTimeout": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -101,7 +101,7 @@
   },
   "HTTPVersionNotSupported": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -121,7 +121,7 @@
   },
   "VariantAlsoNegotiates": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -141,7 +141,7 @@
   },
   "InsufficientStorage": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -161,7 +161,7 @@
   },
   "LoopDetected": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -181,7 +181,7 @@
   },
   "BandwidthLimitExceeded": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -201,7 +201,7 @@
   },
   "NotExtended": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {
@@ -221,7 +221,7 @@
   },
   "NetworkAuthenticationRequired": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "error": {

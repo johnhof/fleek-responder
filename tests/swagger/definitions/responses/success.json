@@ -1,7 +1,7 @@
 {
   "OK": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -12,7 +12,7 @@
   },
   "Created": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -23,7 +23,7 @@
   },
   "Accepted": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -34,7 +34,7 @@
   },
   "NonAuthoritativeInformation": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -45,7 +45,7 @@
   },
   "NoContent": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -56,7 +56,7 @@
   },
   "ResetContent": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -67,7 +67,7 @@
   },
   "PartialContent": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -78,7 +78,7 @@
   },
   "MultiStatus": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -89,7 +89,7 @@
   },
   "AlreadyReported": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -100,7 +100,7 @@
   },
   "IMUsed": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {

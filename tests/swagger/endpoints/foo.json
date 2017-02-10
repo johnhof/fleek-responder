@@ -13,14 +13,25 @@
         "required": true
       }],
       "responses": {
-        "200": {
+        "OK": {
           "schema": {
-            "$ref": "#/definitions/200"
+            "$ref": "../definitions/responses/success.json#OK"
           }
         },
-        "500": {
+        "InternalServerError": {
           "schema": {
-            "$ref": "#/definitions/500"
+            "$ref": "../definitions/responses/server_error.json#InternalServerError"
+          }
+        },
+        "NotFound": {
+          "schema": {
+            "$ref": "../definitions/responses/client_error.json#NotFound"
+          }
+        },
+        "default": {
+          "description": "Foo not found",
+          "schema": {
+            "$ref": "../definitions/responses/client_error.json#NotFound"
           }
         }
       }
@@ -30,28 +41,39 @@
       "tags": [
         "foo"
       ],
+      "parameters": [{
+        "name": "first_name",
+        "in": "body",
+        "description": "User first name",
+        "type": "string"
+      }, {
+        "name": "last_name",
+        "in": "body",
+        "description": "User last name",
+        "type": "string"
+      }],
       "responses": {
-        "200": {
+        "OK": {
           "schema": {
-            "$ref": "#/definitions/200"
+            "$ref": "../definitions/responses/success.json#OK"
           }
         },
-        "500": {
+        "InternalServerError": {
           "schema": {
-            "$ref": "#/definitions/500"
+            "$ref": "../definitions/responses/server_error.json#InternalServerError"
           }
         },
-        "parameters": [{
-          "name": "first_name",
-          "in": "body",
-          "description": "User first name",
-          "type": "string"
-        }, {
-          "name": "last_name",
-          "in": "body",
-          "description": "User last name",
-          "type": "string"
-        }]
+        "NotFound": {
+          "schema": {
+            "$ref": "../definitions/responses/client_error.json#NotFound"
+          }
+        },
+        "default": {
+          "description": "Foo not found",
+          "schema": {
+            "$ref": "../definitions/responses/client_error.json#NotFound"
+          }
+        }
       }
     },
     "delete": {
@@ -60,15 +82,26 @@
         "foo"
       ],
       "responses": {
-        "200": {
+        "NoContent": {
           "schema": {
-            "$ref": "#/definitions/200"
+            "$ref": "../definitions/responses/success.json#NoContent"
           }
-        }
-      },
-      "500": {
-        "schema": {
-          "$ref": "#/definitions/500"
+        },
+        "InternalServerError": {
+          "schema": {
+            "$ref": "../definitions/responses/server_error.json#InternalServerError"
+          }
+        },
+        "NotFound": {
+          "schema": {
+            "$ref": "../definitions/responses/client_error.json#NotFound"
+          }
+        },
+        "default": {
+          "description": "Foo not found",
+          "schema": {
+            "$ref": "../definitions/responses/client_error.json#NotFound"
+          }
         }
       }
     }
@@ -106,15 +139,26 @@
         "required": true
       }],
       "responses": {
-        "200": {
+        "Created": {
           "schema": {
-            "$ref": "#/definitions/200"
+            "$ref": "../definitions/responses/success.json#Created"
           }
         },
-        "500": {
+        "InternalServerError": {
           "schema": {
-            "$ref": "#/definitions/500"
+            "$ref": "../definitions/responses/server_error.json#InternalServerError"
           }
+        },
+        "BadRequest": {
+          "schema": {
+            "$ref": "../definitions/responses/server_error.json#BadRequest"
+          }
+        }
+      },
+      "default": {
+        "description": "Foo not found",
+        "schema": {
+          "$ref": "../definitions/responses/server_error.json#InternalServerError"
         }
       }
     }

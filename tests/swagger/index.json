@@ -18,8 +18,6 @@
   ],
   "paths": {
     "allOf": [{
-      "$ref": "endpoints/status.json"
-    }, {
       "$ref": "endpoints/foo.json"
     }]
   },

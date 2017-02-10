@@ -28,6 +28,8 @@
   "homepage": "https://github.com/fleekjs/fleek-responder#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "fleek-parser": "^1.2.5",
+    "mocha": "^3.2.0",
+    "swagger-parser": "^3.4.1"
   }
 }

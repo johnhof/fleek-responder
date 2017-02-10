@@ -2,9 +2,19 @@
 
 let mocha = require('mocha');
 let expect = require('chai').expect;
+let parser = require('swagger-parser');
 
 const Responder = require('../lib/responder');
-
+let swagger;
+// parser.dereference(`${__dirname}/swagger/index.json`).then((s) => {
+parser.bundle(`${__dirname}/swagger/index.json`).then((s) => {
+  swagger = s
+  process.exit();
+}).catch((e) => {
+  console.log(e);
+  process.exit();
+});
+const SWAGGER = swagger;
 let promish = (cb) => (ctx, next) => new Promise((resolve, reject) => {
   cb();
   resolve();

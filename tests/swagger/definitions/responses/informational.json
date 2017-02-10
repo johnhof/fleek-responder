@@ -1,7 +1,7 @@
 {
   "Continue": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
@@ -12,7 +12,7 @@
   },
   "SwitchingProtocols": {
     "allOf": [{
-      "$ref": "#/definitions/BaseResponse"
+      "$ref": "base.json#BaseResponse"
     }, {
       "properties": {
         "code": {
